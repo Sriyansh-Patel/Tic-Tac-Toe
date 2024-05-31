@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>tic Tac Toe</title>
+    </head>
+
+<body>
+    
+        <!-- video Element -->
+        <video autoplay loop muted playsinline style="width: 100vw;position: fixed; height: 100vh;z-index: -1;">
+            <source src="3163534-uhd_3840_2160_30fps.mp4" type="video/mp4">
+        </video>
+
+        <div class="gameArea gameAreaHide" id ="gameField">
+            <div class="title">Tic Tac Toe</div>
+        
+        <div class="resultField">
+            <div class="f">
+
+                <div >
+                    <span id="playerDisplay" class="playerDisplayOne">Player <span class="displayX0">&#9587;&nbsp;</span></span>
+                    <span class="playerOne">Player 1</span>
+                    <span class="resultOne">0</span>
+                </div>
+                <div>
+                    <span id="playerDisplay" class="playerDisplayTwo">Player <span class="displayX0">&#9711;&nbsp;</span></span>
+                    <span class="playerTwo">Player 2</span>
+                    <span class="resultTwo">0</span>
+                </div>
+            </div>
+                
+            <div class="messageField messageHide">
+                <div id ="message" class="messageFieldWinner"></div>
+            </div>
+        </div>
+        <div class="playField playFieldHide" >
+            <button id="one" class ="firstRow firstColumn diagonalDown btn "></button>
+            <button id="two" class ="firstRow secondColumn btn "></button>
+            <button id="three" class="thirdColumn firstRow diagonalUp btn "></button>
+            <button id="four" class="secondRow firstColumn btn  diagonalDown"></button>
+            <button id="five" class="secondRow secondColumn  btn "></button>
+            <button id="six" class="secondRow thirdColumn  btn  diagonalUp"></button>
+            <button id="seven" class="thirdRow firstColumn  btn diagonalDown"></button>
+            <button id="eight" class="thirdRow secondColumn btn "></button>
+            <button id="nine" class="thirdColumn thirdRow  btn diagonalUp"></button>   
+        </div>
+
+        <div class="winnerWindow winnerWindowHide">
+            <span>
+                <span class="winner">Winner:</span>
+                <span class="winnerName">name of Winner</span><br>
+            </span>
+            <button class="playAgain">Play Again</button>
+            <button class="resetGame">Reset Game</button>
+        </div>
+    
+        </div>
+
+        <div class="playerNames" id="startField" >
+            <div class="title">Tic-Tac-Toe</div>
+            <form action="/Web/Ludo">
+                <div>
+                    <label for="playerX">&#9587; &nbsp;
+                        Player Name:</label>
+                    <input type="text" name="" id="playerX" autofocus>
+                </div>
+                <div>
+                    <label for="player0">&#9711; &nbsp;
+                        Player Name:</label>
+                    <input type="text" name="" id="player0" autofocus>
+                </div>
+                <button id="start" type="button"> Start the Game</button>
+            </form>
+        </div>
+    
+
+        <script src="script.js"></script>
+</body>
+</html>
+
+
